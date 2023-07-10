@@ -1,0 +1,1 @@
+$((function(){localStorage.setItem("pdklufanet",!1),$("#btnShowOrderForm").click((function(){localStorage.setItem("pdklufanet",!0),$("#feedback-order-header").modal()})),$("#feedback-order-header").on("hidden.bs.modal",(function(e){localStorage.setItem("pdklufanet",!1)}))}));

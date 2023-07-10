@@ -1,0 +1,1 @@
+function httpGet(o){var n=new XMLHttpRequest;return n.open("GET",o,!1),n.send(null),n.responseText}function checkAdBlock(){try{ads,showInfoAdBlock(!1)}catch(o){showInfoAdBlock(!0)}}function showInfoAdBlock(o){httpGet(o?"/counter/?block=yes":"/counter/?block=no")}window.onload=function(){checkAdBlock()};
