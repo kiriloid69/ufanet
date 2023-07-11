@@ -57,7 +57,7 @@
                                 <img src="fonts/logo.svg" />
                             </a>
                             <a href="#" class="city" id="city" data-toggle="modal" data-target="#list-cities">Уфа</a>
-                            <div class="phone-list">
+                            <div class="phone-list phone-list-pc">
                                 <a href="tel:09388" class="phone-list__phone phone-list__phone--mobile">09388 </a>
 
                                 <a href="tel:+70000-000-000" class="phone-list__phone"><span>+7 (000)</span> 0-000-000 </a>
@@ -83,7 +83,16 @@
 
                     <div class="header-content header-content--mobile">
                         <div class="header-content__phone">
-                            <a href="#" class="city" data-toggle="modal" data-target="#mobile-list-cities">Уфа</a>
+                            <div class="phone-list phone-list-mobile">
+                                <a href="tel:09388" class="phone-list__phone phone-list__phone--mobile">09388 </a>
+
+                                <a href="tel:+70000-000-000" class="phone-list__phone"><span>+7 (000)</span> 0-000-000 </a>
+
+                                <div class="phone-list__phone online-help-btn">
+                                    <img src="fonts/icon-online-help.svg" alt="icon-online-help" />
+                                    <span class="text--grey">Online помощь</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -184,7 +193,7 @@
                         <div class="swiper-carousel__container swiper-carousel__banner">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide swiper-wrapper__slide">
-                                    <div class="main-banner" style="background: url(img/banner.png) no-repeat 0 / cover; text-align: center">
+                                    <div class="main-banner" id="banner-1">
                                         <!-- <div class="main-banner__title mobile-text">⠀</div>
                                         <div class="main-banner__desc mobile-text">⠀</div> -->
 
@@ -193,7 +202,7 @@
                                 </div>
 
                                 <div class="swiper-slide swiper-wrapper__slide">
-                                    <div class="main-banner" style="background: url(img/banner.png) no-repeat 0 / cover; text-align: center">
+                                    <div class="main-banner" id="banner-2">
                                         <!-- <div class="main-banner__title mobile-text">⠀</div>
                                         <div class="main-banner__desc mobile-text">⠀</div> -->
                                         <a href="#" class="btn btn--yellow" style="position: initial">Узнать подробнее</a>
@@ -201,7 +210,7 @@
                                 </div>
 
                                 <div class="swiper-slide swiper-wrapper__slide">
-                                    <div class="main-banner" style="background: url(img/banner.png) no-repeat 100% 0 / cover; text-align: center">
+                                    <div class="main-banner" id="banner-3">
                                         <!-- <div class="main-banner__title mobile-text">⠀</div>
                                         <div class="main-banner__desc mobile-text">⠀</div> -->
 
@@ -725,7 +734,7 @@
                 </div>
             </div>
 
-            <div class="calculator">
+            <div class="calculator grid-container">
                 <div class="selected-tariff">
                     <div class="grid-container">
                         <div class="grid-row">
@@ -940,15 +949,8 @@
                             <div class="terms-of-use">
                                 <input type="checkbox" id="terms-of-use" />
 
-                                Нажимая на кнопку, вы соглашаетесь с<a
-                                    target="_blank"
-                                    href="
-                        
-                             /media/uploads/2022/12/19/private_data_policy.pdf
-                        "
-                                >
-                                    политикой в отношении обработки персональных данных.</a
-                                ><span class="star">*</span>
+                                Нажимая на кнопку, вы соглашаетесь с
+                                <a target="_blank" href="#"> политикой в отношении обработки персональных данных.</a><span class="star">*</span>
                             </div>
                         </div>
                     </form>

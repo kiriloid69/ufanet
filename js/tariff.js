@@ -2,7 +2,7 @@ $(function () {
     new RangeTouch(".input-range", { thumbWidth: 35 });
     var i;
     $(".input-range").val(function () {
-        "2" === $(this).attr("max") && $(this).siblings(".slider").css("left", "75%");
+        "2" === $(this).attr("max") && $(this).siblings(".slider").css("left", "0%");
     }),
         $(".input-range").on("input", function (i) {
             i.stopPropagation(),

@@ -1,39 +1,36 @@
 ﻿@font-face {
-    font-family: 'icomoon';
-    src:  url('../fonts/icomoon.eot');
-    src:  url('../fonts/icomoon.eot') format('embedded-opentype'),
-      url('../fonts/icomoon.ttf') format('truetype'),
-      url('../fonts/icomoon.woff') format('woff'),
-      url('../fonts/icomoon.svg') format('svg');
+    font-family: "icomoon";
+    src: url("../fonts/icomoon.eot");
+    src: url("../fonts/icomoon.eot") format("embedded-opentype"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.svg") format("svg");
     font-weight: normal;
     font-style: normal;
-  }
-  
-  [class^="icon-"], [class*=" icon-"] {
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
+    font-family: "icomoon" !important;
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
     text-transform: none;
     line-height: 1;
-  
+
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
-  
-  .icon-close:before {
+}
+
+.icon-close:before {
     content: "\e901";
     color: #fff;
-  }
-  .icon-eye-gray:before {
+}
+.icon-eye-gray:before {
     content: "\e900";
     color: #aab1c1;
-  }
-  
+}
 
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700&display=swap&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap");
 @font-face {
     font-family: "PT-Sans Bold";
     src: url("../fonts/pt-sans-bold.woff") format("woff");
@@ -221,11 +218,19 @@
         right: -13px;
     }
 }
-@media (max-width: 992px) {
+@media (max-width: 768px) {
     .header-content .city {
-        display: none;
+        /* display: none; */
         font-size: 14px;
         line-height: 16px;
+    }
+
+    .phone-list-pc {
+        display: none !important;
+    }
+
+    .header-content .city {
+        margin-left: 25%;
     }
 }
 @media (max-width: 576px) {
@@ -240,6 +245,12 @@
     align-items: flex-start;
     width: 400px;
 }
+
+.phone-list-mobile {
+    width: 100% !important;
+    justify-content: space-between;
+}
+
 .header-content .phone-list a:nth-child(1) {
     margin-right: 45px;
 }
@@ -279,11 +290,7 @@
 .header-content__phone .logo {
     min-width: 140px;
 }
-@media (max-width: 375px) {
-    .header-content__phone .logo {
-        min-width: 96px;
-    }
-}
+
 .phone-list__phone {
     font-size: 22px;
     line-height: 26px;
@@ -310,6 +317,9 @@
     .phone-list__phone {
         font-size: 14px;
         line-height: 16px;
+    }
+    .header-content__phone .logo {
+        min-width: 96px;
     }
 }
 .phone-list__phone span.text--grey {
@@ -492,7 +502,7 @@
     width: 150px;
     display: flex;
     justify-content: space-between;
-} 
+}
 
 .footer .links a img {
     width: 43px;
@@ -638,6 +648,12 @@
 @media (min-width: 768px) {
     .grid-container {
         max-width: 720px;
+    }
+}
+
+@media (min-width: 769px) {
+    .header-content--mobile {
+        display: none;
     }
 }
 @media (min-width: 992px) {
@@ -967,22 +983,22 @@
 }
 .our-services .service-card:nth-child(5n + 1) .service-thumb__frame,
 .our-services .service-card:nth-child(5n + 7) .service-thumb__frame {
-    background: linear-gradient(226.51deg, #FF5F00 17.51%, #FF8A00 86.02%);
+    background: linear-gradient(226.51deg, #ff5f00 17.51%, #ff8a00 86.02%);
 }
 .our-services .service-card:nth-child(5n + 2) .service-thumb__frame {
-    background: linear-gradient(226.51deg, #0075FF 17.51%, #309CFF 86.02%);
+    background: linear-gradient(226.51deg, #0075ff 17.51%, #309cff 86.02%);
 }
 .our-services .service-card:nth-child(5n + 3) .service-thumb__frame {
-    background: linear-gradient(226.51deg, #CE0DCA 17.51%, #D14EFF 86.02%);
+    background: linear-gradient(226.51deg, #ce0dca 17.51%, #d14eff 86.02%);
 }
 .our-services .service-card:nth-child(5n + 4) .service-thumb__frame {
-    background: linear-gradient(226.51deg, #5200FF 17.51%, #9830FF 86.02%);
+    background: linear-gradient(226.51deg, #5200ff 17.51%, #9830ff 86.02%);
 }
 .our-services .service-card:nth-child(5n + 5) .service-thumb__frame {
-    background: linear-gradient(226.51deg, #7ABF31 17.51%, #ACD816 86.02%);
+    background: linear-gradient(226.51deg, #7abf31 17.51%, #acd816 86.02%);
 }
 .our-services .service-card:nth-child(5n + 6) .service-thumb__frame {
-background: linear-gradient(226.51deg, #FF9212 17.51%, #F9CC1E 86.02%);
+    background: linear-gradient(226.51deg, #ff9212 17.51%, #f9cc1e 86.02%);
 }
 @media (min-width: 768px) {
     .our-services .service-card {
@@ -2661,10 +2677,10 @@ h6 {
     background: linear-gradient(222.45deg, #e8261e 9.25%, #e68c22 92.46%);
 }
 .widget__content--yellow-gradient {
-    background: linear-gradient(45.83deg, #F9CE1E 2.34%, #FF9212 72.88%);
+    background: linear-gradient(45.83deg, #f9ce1e 2.34%, #ff9212 72.88%);
 }
 .widget__content--blue-gradient {
-    background: linear-gradient(30.47deg, #3A94FF 2.62%, #003EB7 92.16%);
+    background: linear-gradient(30.47deg, #3a94ff 2.62%, #003eb7 92.16%);
 }
 .widget__content__title {
     font-size: 22px;
@@ -2693,10 +2709,6 @@ h6 {
     .widget__content__title {
         flex-grow: 0;
     }
-}
-.widget__content__img {
-    /* max-width: 60px; */
-    margin-right: 20px;
 }
 @media (min-width: 581px) {
     .widget__content__img {
@@ -2819,11 +2831,43 @@ h6 {
     flex-direction: column;
     justify-content: flex-end;
     width: 100%;
-    height: 352px;
+    height: 40vh;
     padding: 30px;
     position: relative;
     margin-top: 20px;
 }
+
+#banner-1 {
+    background: url(../img/banner.png) no-repeat 0 / cover;
+    text-align: center;
+}
+#banner-2 {
+    background: url(../img/banner.png) no-repeat 0 / cover;
+    text-align: center;
+}
+#banner-3 {
+    background: url(../img/banner.png) no-repeat 0 / cover;
+    text-align: center;
+}
+
+@media screen and (max-width: 575px) {
+    .main-banner .btn {
+        max-width: 100%;
+    }
+
+    #banner-1 {
+        background: url(../img/banner-mobile.png) no-repeat 0 / cover;
+    }
+
+    #banner-2 {
+        background: url(../img/banner-mobile.png) no-repeat 0 / cover;
+    }
+
+    #banner-3 {
+        background: url(../img/banner-mobile.png) no-repeat 0 / cover;
+    }
+}
+
 @media (min-width: 1519px) {
     .main-banner {
         padding: 30px 170px;
@@ -3004,6 +3048,10 @@ h6 {
     .service__benefits .benefits {
         margin: 0;
     }
+    .widget__content__img {
+        max-width: 60px;
+        margin-right: 20px;
+    }
 }
 .service__benefits .benefit {
     width: 270px;
@@ -3099,9 +3147,8 @@ h6 {
 }
 
 .service__tariffs .tariff .recomended.top {
-    background-color: #FF5F00;
+    background-color: #ff5f00;
 }
-
 
 .service__tariffs .oferta {
     margin-top: 20px;
@@ -4624,7 +4671,7 @@ input[type="checkbox"] {
     width: calc(25% - 10px);
     border-radius: 0;
     margin-right: 10px;
-    background: #FF5F00;
+    background: #ff5f00;
 }
 .swiper-carousel--banners .swiper-pagination-bullet:last-child {
     margin-right: 0;
@@ -4735,6 +4782,7 @@ input[type="checkbox"] {
     height: auto;
     display: flex;
     flex-direction: column;
+    margin-right: 30px !important;
 }
 .swiper-carousel--tariffs .swiper-slide .tariff__options {
     flex-grow: 1;
@@ -6570,7 +6618,7 @@ div.question-container .content {
     transition-timing-function: linear;
 }
 .news-container__cat li:hover label {
-    background-color: #2E70A2;
+    background-color: #2e70a2;
     color: #fff;
 }
 @media (max-width: 480px) and (orientation: portrait) {
@@ -6588,7 +6636,7 @@ div.question-container .content {
     cursor: pointer;
 }
 .news-container__cat input:checked + label {
-    background-color: #2E70A2;
+    background-color: #2e70a2;
     color: #fff;
 }
 .news-container__cat label {

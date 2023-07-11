@@ -43,19 +43,6 @@
         <script src="../js/jquery.min.js"></script>
         <script src="../js/promo.js"></script>
         <script src="../js/bootstrap.min.js"></script>
-        <script type="text/javascript">
-            $(function () {
-                var links = document.getElementsByTagName("a");
-                var utm = "";
-                for (var i = 0; i < links.length; i++) {
-                    var link = links[i];
-                    if (link.classList.contains("phone-list__phone") == false && link.href.includes("play.google") == false && link.getAttribute("data-toggle") != "modal" && link.getAttribute("data-toggle") != "collapse" && link.href.includes(utm) == false) {
-                        link.href = link.href + utm;
-                    }
-                }
-            });
-        </script>
-
         <script src="../js/cleave.min.js"></script>
         <script src="../js/cleave-phone.ru.js"></script>
         <script src="../js/main.js"></script>
@@ -80,11 +67,11 @@
                 <div class="grid-container">
                     <div class="header-content">
                         <div class="header-content__phone">
-                            <a href="../index.html" class="logo">
+                            <a href="#" class="logo">
                                 <img src="../fonts/logo.svg" />
                             </a>
                             <a href="#" class="city" id="city" data-toggle="modal" data-target="#list-cities">Уфа</a>
-                            <div class="phone-list">
+                            <div class="phone-list phone-list-pc">
                                 <a href="tel:09388" class="phone-list__phone phone-list__phone--mobile">09388 </a>
 
                                 <a href="tel:+70000-000-000" class="phone-list__phone"><span>+7 (000)</span> 0-000-000 </a>
@@ -110,7 +97,16 @@
 
                     <div class="header-content header-content--mobile">
                         <div class="header-content__phone">
-                            <a href="#" class="city" data-toggle="modal" data-target="#mobile-list-cities">Уфа</a>
+                            <div class="phone-list phone-list-mobile">
+                                <a href="tel:09388" class="phone-list__phone phone-list__phone--mobile">09388 </a>
+
+                                <a href="tel:+70000-000-000" class="phone-list__phone"><span>+7 (000)</span> 0-000-000 </a>
+
+                                <div class="phone-list__phone online-help-btn">
+                                    <img src="../fonts/icon-online-help.svg" alt="icon-online-help" />
+                                    <span class="text--grey">Online помощь</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -122,7 +118,7 @@
                         <ul class="list">
                             <li><a href="flat.html">Интернет и ТВ в квартире</a></li>
 
-                            <li><a href="#">Интернет и ТВ в частном доме</a></li>
+                            <li><a href="house.html">Интернет и ТВ в частном доме</a></li>
 
                             <li><a href="office.html">Интернет в офис</a></li>
 
