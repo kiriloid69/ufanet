@@ -17,22 +17,13 @@
 
         <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png" />
 
-        
-
         <meta name="theme-color" content="#ffffff" />
         <meta name="apple-mobile-web-app-title" content="Ufanet" />
-        </script>
-
-        
 
         <link rel="stylesheet" href="css/bootstrap.min.css" />
-        
         <link rel="stylesheet" href="css/font-awesome.min.css" />
         <link rel="stylesheet" href="css/swiper.min.css" />
         <link rel="stylesheet" href="css/style.css" />
-        
-        
-        
 
         <script src="js/script.js"></script>
         <script src="js/jquery.min.js"></script>
@@ -62,7 +53,7 @@
                 <div class="grid-container">
                     <div class="header-content">
                         <div class="header-content__phone">
-                            <a href="/" class="logo">
+                            <a href="#" class="logo">
                                 <img src="fonts/logo.svg" />
                             </a>
                             <a href="#" class="city" id="city" data-toggle="modal" data-target="#list-cities">Уфа</a>
@@ -78,7 +69,7 @@
                             </div>
                         </div>
 
-                        <!-- <div class="header-content__nav">
+                        <div class="header-content__nav">
                             <a href="#" class="link-menu">
                                 <div class="link-menu__icon">
                                     <span class="line1"></span>
@@ -87,7 +78,7 @@
                                 </div>
                                 <div class="link-menu__title">Меню</div>
                             </a>
-                        </div> -->
+                        </div>
                     </div>
 
                     <div class="header-content header-content--mobile">
@@ -224,7 +215,7 @@
                         <div class="swiper-pagination"></div>
                     </div>
 
-                    <div style="margin-top: 65px;" class="service__section service__tariffs">
+                    <div style="margin-top: 65px" class="service__section service__tariffs">
                         <div class="title">Тарифные планы</div>
 
                         <div class="flex">
@@ -588,7 +579,7 @@
                             </div>
                         </div>
                     </div>
-                    <div style="margin-top: 50px;" class="service__section service__how-connect">
+                    <div style="margin-top: 50px" class="service__section service__how-connect">
                         <div class="title">Часто задаваемые вопросы</div>
                         <div class="accordion" id="FAQ-accordion">
                             <div class="accordion__items">
@@ -597,8 +588,8 @@
                                 <div class="accordion__contents">
                                     <div class="accordion__contents__inner">
                                         <p>
-                                            Если у вас в квартире уже есть кабели для интернета и ТВ, то подключение бесплатное. Если по квартире необходимо провести новые кабели, то стоимость интернет кабеля - 40 ₽/м, телевизионного - 20 ₽/м. Стоимость монтажа (сверление отверстий, крепление
-                                            кабеля к стене/потолку, прокладка кабеля над плинтусом или в нём) - 100 ₽/м.
+                                            Если у вас в квартире уже есть кабели для интернета и ТВ, то подключение бесплатное. Если по квартире необходимо провести новые кабели, то стоимость интернет кабеля - 40 ₽/м, телевизионного - 20 ₽/м. Стоимость монтажа (сверление отверстий, крепление кабеля
+                                            к стене/потолку, прокладка кабеля над плинтусом или в нём) - 100 ₽/м.
                                         </p>
                                     </div>
                                 </div>
@@ -733,6 +724,37 @@
                     </div>
                 </div>
             </div>
+
+            <div class="calculator">
+                <div class="selected-tariff">
+                    <div class="grid-container">
+                        <div class="grid-row">
+                            <div class="selected-tariff__content">
+                                <div class="tariff-desc">
+                                    <div class="tariff-desc__name"></div>
+                                    <div class="tariff-desc__list-services"></div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="tariff-sum tariff-sum--once">
+                                        <div class="tariff-sum__result"><span id="sum"></span> ₽</div>
+                                        <div class="tariff-sum__label">Разовый платеж</div>
+                                    </div>
+                                    <div class="tariff-sum tariff-sum--monthly">
+                                        <div class="tariff-sum__result"><span id="sum"></span> ₽</div>
+                                        <div class="tariff-sum__label">Ежемесячный платеж</div>
+                                    </div>
+                                    <a href data-target="#feedback-order-header" data-toggle="modal" class="btn btn--yellow">Подключиться</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tariff-services" id="listServices"> </div>
+
+                <div class="tariff-services tariff-services--secondary" id="listDevices"> </div>
+            </div>
         </main>
 
         <!---->
@@ -822,7 +844,6 @@
                             <li><a href="pages/o-nas.html/">98423223</a></li>
 
                             <li><a href="pages/news.html">@mail.ru</a></li>
-
                         </ul>
 
                         <div class="title">Мы в социальных сетях</div>
@@ -11491,8 +11512,6 @@
                 <span id="btnCloseFeedbackForm">×</span>
             </div>
         </div>
-
-        
         <script type="text/javascript">
             $(function () {
                 var isFirstVisit = JSON.parse(false);
