@@ -155,6 +155,7 @@
 @media (max-width: 1520px) {
     .header-content .city {
         margin-left: 20px;
+        margin-right: 40px;
     }
 }
 .header-content .city:hover,
@@ -203,6 +204,7 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    width: 400px;
 }
 .header-content .phone-list a:nth-child(1) {
     margin-right: 45px;
@@ -221,10 +223,11 @@
     }
 }
 .header-content__phone {
-    flex-grow: 1;
+    /* flex-grow: 1; */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 45%;
 }
 @media (min-width: 1200px) and (max-width: 1520px) {
     .header-content__phone {
@@ -262,13 +265,13 @@
     text-decoration: none;
     border-bottom: 2px solid #23262b;
 }
-@media (max-width: 1520px) {
+/* @media (max-width: 780px) {
     .phone-list__phone {
         display: none;
         font-size: 18px;
         line-height: 21px;
     }
-}
+} */
 @media (max-width: 576px) {
     .phone-list__phone {
         font-size: 14px;
@@ -6267,7 +6270,7 @@ div.question-container .content {
 @media screen and (max-width: 576px) {
     .map-content #map,
     .map-content #map > ymaps {
-        height: 370px !important;
+        display: none;
     }
 }
 .map-content > h2,
