@@ -4689,7 +4689,7 @@ input[type="checkbox"] {
 }
 @media (min-width: 576px) {
     .swiper-carousel--news .swiper-carousel__container::before {
-        content: url(../images/news-title.png);
+        content: url(../img/news-title.png);
         position: absolute;
         top: 0;
         left: 0;
@@ -8651,4 +8651,3 @@ img.img-primary {
 .modal.modal--list-cities {
     display: none;
 }
-/*# sourceMappingURL=style.css.map */
